@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopNow — Products</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <h1 class="logo">ShopNow</h1>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Our Products</h2>
+  </section>
+
+
+<section class="catalogue-controls">
+
+  <input
+    type="text"
+    id="search-box"
+    placeholder="Search products..."
+  >
+
+  <div class="category-buttons">
+    <button class="category-btn" data-category="All">All</button>
+    <button class="category-btn" data-category="Computers">Computers</button>
+    <button class="category-btn" data-category="Phones">Phones</button>
+    <button class="category-btn" data-category="Tablets">Tablets</button>
+    <button class="category-btn" data-category="Accessories">Accessories</button>
+    <button class="category-btn" data-category="Watches">Watches</button>
+  </div>
+
+  <select id="sort-select">
+    <option value="default">Sort by Price</option>
+    <option value="low-high">Price: Low to High</option>
+    <option value="high-low">Price: High to Low</option>
+  </select>
+
+</section>
+
+<section class="product-grid" id="product-list"></section>
+
+  
+
+
+  <footer class="site-footer">
+    <p>&copy; 2025 ShopNow.</p>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
